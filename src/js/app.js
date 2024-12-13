@@ -1,11 +1,33 @@
-// TODO: write code here
+import Gui from './Gui';
+import Logic from './Logic';
 
-// comment this to pass build
-const unusedVariable = "variable";
+const gui = new Gui();
+gui.init();
+const logic = new Logic(gui);
+logic.init();
 
-// for demonstration purpose only
-export default function demo(value) {
-  return `Demo: ${value}`;
-}
+// const wrap = document.getElementsByClassName('wrapper')[0];
+// const img = document.images[0];
+// img.parentElement.removeChild(img);
 
-console.log("app.js included");
+// for (let i = 0; i < 4 * 4; i += 1) {
+//   const div = document.createElement('div');
+//   wrap.appendChild(div);
+// }
+
+// function getPosition() {
+//   return Math.floor(Math.random() * (15 + 1));
+// }
+// function insertImg() {
+//   if (document.images[0]) {
+//     const activeDiv = document.images[0].parentElement;
+//     activeDiv.removeChild(img);
+//   }
+//   const childDivs = wrap.children;
+//   const index = getPosition();
+//   childDivs[index].appendChild(img);
+// }
+
+// const timerId = setInterval(insertImg, 1000);
+
+// setTimeout(() => clearInterval(timerId), 100000);
